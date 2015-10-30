@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Audible Altimeter</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<div class="title-container">
+  <h1>The Open Audible</h1>
+  <h2>By Alexander Harding</h2>
+</div>
+
+<div class="body-container">
+  <div class="flip-container">
+    <div class="flipper">
+      <top>
+        <silk class="author">Open Audible rev.5</silk>
+        <atmega328p></atmega328p>
+        <bmp180></bmp180>
+        <isp>
+          <pin></pin>
+          <pin></pin>
+          <pin></pin>
+          <pin class="square"></pin>
+          <pin></pin>
+          <pin></pin>
+        </isp>
+        <piezo></piezo>
+        <switch>
+          <pos></pos>
+          <pos></pos>
+        </switch>
+      </top>
+      <bottom>
+        <battery class="one"></battery>
+        <battery-holder class="one"></battery-holder>
+        <battery class="two"></battery>
+        <battery-holder class="two"></battery-holder>
+      </bottom>
+    </div>
+  </div>
+  
+  <div class="content">
+    <h3 class="intro">An open source, hackable, $50 audible altimeter for skydivers.</h3>
+        
+    <a href="http://kickstarter.com" class="buy">Back on Kickstarter</a>
+    
+    <br>
+    
+    <p>Audible altimeters can go for $200+, and often have interfaces that are confusing and unnecessary. This audible is different:</p>
+    
+    <ul>
+      <li>Safety first</li>
+      <li>100% open source and hackable</li>
+      <li>Always on operation, with an estimated one year battery life over 500 skydives. Set and forget!</li>
+      <li>Four different modes, with infinite customization when you hook it up to your computer</li>
+      <li>Low battery alarm when in the plane at 500 feet, and right after landing</li>
+      <li>No annoying LCD</li>
+    </ul>
+    
+    <h4>Partlist</h4>
+    <ul>
+      <li>Atmel Atmega328P microprocessor running at 1Mhz</li>
+      <li>Bosch BMP180 barometer</li>
+      <li>TDK 4kHz, 3 Vo-op PS1240P02BT piezo speaker</li>
+      <li>2 position DIP switch</li>
+      <li>FT232RL USB to serial UART interface</li>
+      <li>MicroUSB port</li>
+      <li>2x 20mm CR2032 coin cell battery holders</li>
+      <li>Various 0805 resistors and caps, diode</li>
+      <li>2x3 ISP header</li>
+    </ul>
+
+  </div>
+</div>
+
+</body>
+</html>

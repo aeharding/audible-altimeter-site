@@ -1,0 +1,283 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,300,700);
+body {
+  line-height: 1.4; }
+
+.title-container {
+  height: 300px;
+  width: 100%;
+  text-align: center;
+  font-family: lato, sans;
+  background-color: #fff;
+  overflow: auto;
+  color: #401264; }
+  .title-container h1 {
+    font-weight: 100;
+    font-size: 4em;
+    margin: 1em 0 0; }
+  .title-container h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    font-weight: 300; }
+
+body {
+  background: linear-gradient(90deg, #401264 10%, #1F1C18 100%); }
+
+.body-container {
+  overflow: auto; }
+
+.content {
+  margin: 10em auto 0;
+  max-width: 800px;
+  font-family: lato, sans;
+  color: rgba(255, 255, 255, 0.9); }
+  .content .intro {
+    text-align: center;
+    font-weight: 300;
+    font-family: lato, sans;
+    font-size: 1.3em; }
+
+.buy {
+  text-decoration: none;
+  color: inherit;
+  background-color: #401264;
+  border: 0;
+  display: block;
+  margin: 2em auto;
+  width: 12em;
+  text-align: center;
+  padding: 1em 0; }
+  .buy:hover {
+    background-color: #4e167a; }
+
+silk {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 12em 0 0 0.2em;
+  font-family: Courier New;
+  transform: rotate(-90deg);
+  transform-origin: left top;
+  display: block; }
+
+atmega328p {
+  display: block;
+  position: absolute;
+  top: 5em;
+  left: 13em;
+  width: 4em;
+  height: 4em;
+  background-color: #000; }
+  atmega328p::before {
+    display: block;
+    position: absolute;
+    content: '';
+    background: repeating-linear-gradient(90deg, #B08783, #B08783 4px, #401264 4px, #401264 8px);
+    left: 0.1em;
+    width: calc(100% - 0.2em);
+    height: calc(100% + 0.8em);
+    top: -0.4em;
+    z-index: -1; }
+  atmega328p::after {
+    display: block;
+    position: absolute;
+    content: '';
+    background: repeating-linear-gradient(0deg, #B08783, #B08783 4px, #401264 4px, #401264 8px);
+    top: 0.1em;
+    height: calc(100% - 0.2em);
+    width: calc(100% + 0.8em);
+    left: -0.4em;
+    z-index: -1; }
+
+bmp180 {
+  height: 1.4em;
+  width: 1.6em;
+  border-radius: 1mm;
+  background-color: #aaa;
+  display: block;
+  position: absolute;
+  left: 8.5em;
+  top: 6em; }
+  bmp180::before {
+    position: absolute;
+    display: block;
+    width: 0.3em;
+    height: 0.3em;
+    border-radius: 0.1em;
+    background-color: #777;
+    top: 0.3em;
+    right: 0.3em;
+    content: ''; }
+  bmp180::after {
+    top: -0.1em;
+    right: -0.1em;
+    bottom: -0.1em;
+    left: -0.1em;
+    background-color: #676767;
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1; }
+
+switch {
+  display: block;
+  position: absolute;
+  top: 4.5em;
+  left: 2.5em;
+  width: 4em;
+  height: 5em;
+  background-color: #bbb; }
+  switch::before {
+    display: block;
+    position: absolute;
+    content: '';
+    background: repeating-linear-gradient(90deg, #B08783, #B08783 15px, #401264 15px, #401264 30px);
+    left: 0.5em;
+    width: calc(100% - 1em);
+    height: calc(100% + 2em);
+    top: -1em;
+    z-index: -1; }
+  switch pos {
+    float: left;
+    height: 3em;
+    width: 1.5em;
+    margin-left: 0.333em;
+    margin-top: 1em;
+    background-color: #aaa;
+    position: relative; }
+    switch pos::before {
+      content: 'ON';
+      position: absolute;
+      top: -1.1em;
+      color: #888; }
+    switch pos::after {
+      content: '';
+      position: absolute;
+      bottom: 0.25em;
+      background-color: #555;
+      width: 1em;
+      height: 1em;
+      left: 0.25em; }
+
+isp {
+  width: 3.6em;
+  padding: 0.25em;
+  border-radius: 0.2em;
+  display: block;
+  position: absolute;
+  left: 7.8em;
+  top: 10.5em;
+  border: 1px solid rgba(255, 255, 255, 0.8); }
+  isp::before {
+    content: 'ISP';
+    display: block;
+    position: absolute;
+    top: -1.2em;
+    right: 0.5em;
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Courier New; }
+  isp pin {
+    width: 1em;
+    height: 1em;
+    margin: 0.1em;
+    display: inline-block;
+    background-color: #B08783;
+    border-radius: 100%;
+    float: left;
+    position: relative; }
+    isp pin.square {
+      border-radius: 0; }
+    isp pin::after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 4px;
+      top: 4px;
+      width: calc(1em - 8px);
+      height: calc(1em - 8px);
+      border-radius: 100%;
+      background-color: #000; }
+
+piezo {
+  width: 5em;
+  height: 5em;
+  position: absolute;
+  display: block;
+  background-color: #000;
+  border-radius: 100%;
+  left: 7.5em; }
+  piezo::after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 100%;
+    background-color: #B08783;
+    content: ''; }
+
+battery-holder {
+  position: absolute;
+  display: block;
+  top: 2.5em;
+  width: 7em;
+  height: 9em; }
+  battery-holder.one {
+    left: 0.5em; }
+  battery-holder.two {
+    right: 0; }
+
+battery {
+  width: 9em;
+  height: 9em;
+  top: 2.5em;
+  background-color: #999;
+  border-radius: 100%;
+  display: block;
+  position: absolute; }
+  battery.two {
+    right: 0; }
+
+.flip-container {
+  font-size: 1em;
+  perspective: 1000;
+  margin-top: -5em;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0); }
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper {
+  transform: rotateY(180deg); }
+
+.flip-container, top, bottom {
+  width: 20em;
+  height: 13.658em; }
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative; }
+
+/* hide back of pane during swap */
+top, bottom {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  background-color: #401264;
+  border-radius: 1em; }
+
+/* front pane, placed above back */
+top {
+  z-index: 3;
+  /* for firefox 31 */
+  transform: rotateY(0deg); }
+
+/* back, initially hidden pane */
+bottom {
+  transform: rotateY(180deg); }
+
+/*# sourceMappingURL=styles.css.map */
