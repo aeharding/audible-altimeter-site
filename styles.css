@@ -20,7 +20,8 @@ body {
     font-weight: 300; }
 
 body {
-  background: linear-gradient(90deg, #401264 10%, #1F1C18 100%); }
+  background: linear-gradient(90deg, #401264 10%, #1F1C18 100%);
+  margin: 0; }
 
 .body-container {
   overflow: auto; }
